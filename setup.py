@@ -1,5 +1,6 @@
-from distutils.core import setup
-from setuptools import find_packages
+from setuptools import setup, find_packages
+
+REQ = ['requests', ]
 
 setup(
     name='intradata',
@@ -9,5 +10,6 @@ setup(
     license='',
     author='maxvitek',
     author_email='',
-    description=''
+    description='',
+    install_requires=REQ
 )
