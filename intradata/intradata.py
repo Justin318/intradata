@@ -34,7 +34,7 @@ def get_google_data(symbol, interval=60, lookback=1, end_time=time.time()):
     quotes = []
 
     with io.BytesIO(r.content) as csvfile:
-        quote_reader = csv.reader(csvfile)
+        quote_reader = csv.reader(io.StringIO(csvfile.read().decode()))
         timestamp_start = None
         timestamp_offset = None
         timezone_offset = 0
