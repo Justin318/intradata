@@ -1,1 +1,2 @@
-.idea/
+# Distribution and Packaging
+*.egg-info/
